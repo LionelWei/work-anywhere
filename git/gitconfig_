@@ -1,0 +1,29 @@
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[user]
+	name = Lionel Wei (魏来)
+	email = lionelwei@blackfish.cn
+#	name = Lionel Wei
+#	email = lionel.wei@outlook.com
+[core]
+	editor = vim
+[http]
+#	proxy = socks5://127.0.0.1:1080
+[https]
+#	proxy = socks5://127.0.0.1:1080
+[diff]
+	tool = vimdiff
+[alias]
+	st = status -sb
+	ci = commit
+	sb = submodule
+	co = checkout
+	pm = push origin master
+	pd = push origin dev
+	lg = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset' --abbrev-commit
+	d = difftool
+	sm = git branch --set-upstream-to=origin/master master
+[difftool]
+	prompt = false
