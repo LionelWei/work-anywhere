@@ -1,0 +1,13 @@
+// tag
+private static final String TAG = "$CLASS_NAME$";
+
+// switch
+switch ($name$) {
+    case $caseId$:
+        break;
+    default:
+        break;
+}
+
+// loge
+android.util.Log.e(TAG, "$METHOD_NAME$: $content$");
